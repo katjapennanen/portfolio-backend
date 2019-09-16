@@ -6,8 +6,6 @@ const cors = require("cors");
 const projectsRouter = require("./controllers/projects");
 const mongoose = require("mongoose");
 
-console.log("connecting to", config.MONGODB_URI);
-
 mongoose
   .connect(config.MONGODB_URI, { useNewUrlParser: true })
   .then(() => {
